@@ -1,29 +1,34 @@
-🚀 Day 14: Gold Futures Analysis 📈
-Welcome to Day 14 of my data exploration journey! Today, we're diving deep into the fascinating world of Gold Futures to uncover valuable insights and trends in the gold market.
+# 🚀 Day 14: Gold Futures Analysis 📈
 
-📝 Project Overview
-This project focuses on analyzing Gold Futures data—a comprehensive dataset that provides an excellent opportunity to explore historical price trends and market behavior.
+Welcome to **Day 14** of my data exploration journey!  
+Today, we're diving deep into the world of **Gold Futures** to uncover valuable insights and trends in the gold market.
 
-Key Steps:
-Data Preprocessing: Handling missing values and formatting data for smooth analysis.
+---
 
-Data Visualization: Creating insightful charts to reveal trends and patterns.
+## 📝 Project Overview
 
-By exploring this dataset, we aim to discover interesting price fluctuations and meaningful patterns related to Gold Futures.
+Our primary focus is to analyze Gold Futures data —  
+a comprehensive dataset that offers a great opportunity to explore historical price trends and market behavior.
 
-✨ Key Takeaways
-Data Preprocessing: Practiced essential techniques like handling missing values and converting date formats for accurate analysis.
+**Key Steps:**  
+- **Data Preprocessing:** Handle missing values and format data for analysis  
+- **Data Visualization:** Create informative charts to visualize trends  
 
-Visual Insights: Generated visualizations that highlight historical gold price trends and market behavior.
+By exploring this dataset, we aim to reveal interesting patterns, price fluctuations, and other valuable insights related to Gold Futures.
 
-Drawing Conclusions: Developed the ability to extract meaningful insights from complex financial data.
+---
 
-💻 Essential Code Snippets
-Here are some of the key Python code snippets used in this project:
+## ✨ Key Takeaways
 
-python
-Copy
-Edit
+- **Data Preprocessing:** Practiced handling missing data and proper formatting  
+- **Visual Insights:** Created visualizations to grasp price trends and market behavior  
+- **Drawing Conclusions:** Extracted meaningful insights from complex financial data  
+
+---
+
+## 💻 Essential Code Snippets
+
+```python
 # 1. Library Imports
 import numpy as np
 import pandas as pd
@@ -44,15 +49,10 @@ df.info()
 df['Date'] = pd.to_datetime(df['Date'])
 
 # 5. Value Analysis
-df['High'].max()
-df['High'].min()
-df['Low'].min()
-df['Low'].max()
-df['Price'].min()
-df['Price'].max()
-df.isnull().sum()
-➡️ What's Next?
-My data exploration journey continues! I'll be refining my skills, experimenting with advanced visualization techniques, and analyzing diverse datasets to uncover even more exciting insights about financial markets and beyond.
-
-Stay tuned for more discoveries, visualizations, and valuable data insights in the coming days! 📈📊💰🪙📉
-
+print("Max High:", df['High'].max())
+print("Min High:", df['High'].min())
+print("Min Low:", df['Low'].min())
+print("Max Low:", df['Low'].max())
+print("Min Price:", df['Price'].min())
+print("Max Price:", df['Price'].max())
+print("Missing Values:\n", df.isnull().sum())
